@@ -1,0 +1,25 @@
+---
+layout: default
+section: projects
+title: "Projects"
+---
+
+<h1></h2>
+
+<div class="container">
+
+  {% for post in site.categories.projects %}
+
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  {% if loopindex == 1 %}
+    <div class="row">
+  {% endif %}
+
+  {% include project.shtml %}
+
+  {% if loopindex == 0 %}
+    </div>
+  {% endif %}
+
+  {% endfor %}
+</div>

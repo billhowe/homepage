@@ -1,0 +1,9 @@
+<article class="col-md-6 row" style="padding-bottom:10px;">
+  <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="post-teaser">
+  <img class="col-md-4 img-responsive" {% if post.image.teaser %} src="{{ site.baseurl }}/images/{{ post.image.teaser }}" {% else %} src="{{ site.baseurl }}/images/{{ site.teaser }}" {% endif %} alt="teaser" itemprop="image"/>
+  </a>
+  <div class="col-md-8">
+    <div class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+    <div class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncatewords: 25 }}</div>
+  </div>
+</article>

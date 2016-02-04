@@ -1,0 +1,25 @@
+
+ol.bibliography > li {
+ font-family: Verdana, Helvetica, Arial, sans-serif;
+ font-size: 1.0em;
+ line-height: 1.3em;
+ list-style-type: none;
+}
+
+.navbar-inverse {
+  background-color: #4b2e83;
+ }
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+ background-color: #85754d;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a {
+ color: #ffffff;
+ background-color: #85754d;
+}

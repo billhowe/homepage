@@ -1,0 +1,14 @@
+      <hr>
+      <small>
+        This webpage was built with
+        <a href="http://twitter.github.com/bootstrap">Bootstrap</a> and 
+        <a href="https://github.com/mojombo/jekyll">Jekyll</a>. 
+        You can find the source code 
+        <a href="https://github.com/sangjinhan/homepage">here</a>.
+        Last updated: {{'now' | date: "%h %d, %Y"}}
+      </small>
+    </div>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="static/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
