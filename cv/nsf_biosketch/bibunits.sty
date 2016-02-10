@@ -1,0 +1,268 @@
+%%
+%% This is file `bibunits.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% bibunits.dtx  (with options: `package')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% You are *not* allowed to modify this file.
+%% 
+%% You are *not* allowed to distribute this file.
+%% For distribution of the original source see the terms
+%% for copying and modification in the file bibunits.dtx.
+%% 
+%% Package `bibunits' to use with LaTeX2e.
+%% Copyright (C) 1999 by Thorsten Hansen. All rights reserved.
+%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bibunits}
+          [1999/10/22 v2.1 Multiple bibliographies in one document.]
+\newwrite\@bibunitaux
+\newcount\@bibunitauxcnt \@bibunitauxcnt=0
+
+\def\@bibunitname{bu\the\@bibunitauxcnt}
+\newif\if@localcite
+\def\@localcitedefault{\@localcitetrue}%
+\@localcitedefault
+\let\std@cite\cite
+\DeclareRobustCommand\bu@cite{%
+  \@ifstar
+    {\@localcitefalse\std@cite}%
+    {\@localcitetrue\std@cite}}
+\AtBeginDocument{%
+  \@ifpackageloaded{natbib}{%
+    \NAT@set@cites
+    \let\std@@citex\@citex
+    \def\bu@@citex[#1][#2]#3{%
+      \let\@auxout\@bibunitaux \std@@citex[#1][#2]{#3}}%
+    \let\std@Citealp\Citealp
+    \let\std@citealp\citealp
+    \let\std@Citealt\Citealt
+    \let\std@citealt\citealt
+    \let\std@citeasnoun\citeasnoun
+    \let\std@Citeauthor\Citeauthor
+    \let\std@citeauthor\citeauthor
+    \let\std@citeauthoryear\citeauthoryear
+    \let\std@Citep\Citep
+    \let\std@citep\citep
+    \let\std@citet\citet
+    \let\std@Citet\Citet
+    \let\std@citeyear\citeyear
+    \let\std@citeyearpar\citeyearpar
+  }{% else (natbib not loaded)
+  \@ifpackageloaded{overcite}{%
+    \let\std@@citew\@citew
+    \def\bu@@citew#1{%
+      {\let\@auxout\@bibunitaux \std@@citew{#1}}%
+      \if@localcite
+      \else
+        \@nocite{#1}%
+      \fi
+      \@localcitedefault}
+    \let\std@@citex\@citex
+    \def\bu@@citex[#1]#2{%
+      {\let\@auxout\@bibunitaux \std@@citex[#1]{#2}}%
+      \if@localcite
+      \else
+        \@nocite{#2}%
+      \fi
+      \@localcitedefault}
+  }{% neither natbib nor overcite loaded
+    \let\std@@citex\@citex
+    \def\bu@@citex[#1]#2{%
+      {\let\@auxout\@bibunitaux \std@@citex[#1]{#2}}%
+      \if@localcite
+      \else
+        \if@filesw
+          \immediate\write\@auxout{\string\citation{#2}}%
+        \fi
+      \fi
+      \@localcitedefault}%
+  }}%
+}%
+\let\std@nocite\nocite
+\def\bu@nocite{%
+  \@ifstar
+    {\@localcitefalse\@bu@nocite}%
+    {\@localcitetrue\@bu@nocite}}
+\def\@bu@nocite#1{%
+  \@bsphack
+  \if@filesw
+    \immediate\write\@bibunitaux{\string\citation{#1}}%
+  \fi
+  \@esphack
+  \if@localcite
+  \else
+     \std@nocite{#1}%
+  \fi
+  \@localcitedefault}
+\def\bu@bibdata{}
+\let\std@bibliography\bibliography
+\def\bu@bibliography{%
+  \@ifstar
+    {\@localcitetrue\@bu@bibliography}%
+    {\@localcitefalse\@bu@bibliography}}
+\def\@bu@bibliography#1{%
+  \if@filesw
+    \immediate\write\@auxout{\string\gdef\string\bu@bibdata{#1}}%
+  \fi
+  \gdef\bu@bibdata{#1}%
+  \if@localcite
+  \else
+    \std@bibliography{#1}%
+  \fi
+  \@localcitedefault}
+\def\bu@bibstyle{}
+\let\std@bibliographystyle\bibliographystyle
+\def\bu@bibliographystyle{%
+  \@ifstar
+    {\@localcitetrue\@bu@bibliographystyle}%
+    {\@localcitefalse\@bu@bibliographystyle}}
+\def\@bu@bibliographystyle#1{%
+  \if@filesw
+    \immediate\write\@auxout{\string\gdef\string\bu@bibstyle{#1}}%
+  \fi
+  \gdef\bu@bibstyle{#1}%
+  \if@localcite
+  \else
+    \std@bibliographystyle{#1}%
+  \fi
+  \@localcitedefault}
+\def\bibunit{%
+  \global\let\cite\@initcite
+  \global\let\nocite\@initnocite
+  \global\let\Citealp\@initCitealp
+  \global\let\citealp\@initcitealp
+  \global\let\Citealt\@initCitealt
+  \global\let\citealt\@initcitealt
+  \global\let\citeasnoun\@initciteasnoun
+  \global\let\Citeauthor\@initCiteauthor
+  \global\let\citeauthor\@initciteauthor
+  \global\let\citeauthoryear\@initciteauthoryear
+  \global\let\Citep\@initCitep
+  \global\let\citep\@initcitep
+  \global\let\citet\@initcitet
+  \global\let\Citet\@initCitet
+  \global\let\citeyear\@initciteyear
+  \global\let\citeyearpar\@initciteyearpar
+  \global\let\@finishbibunit\relax
+  \@ifnextchar[{\@bibunitx}{\@bibunitx[\bu@bibstyle]}}
+\def\@bibunitx[#1]{\gdef\@localbibstyle{#1}}
+\def\endbibunit{%
+  \global\let\cite\std@cite
+  \global\let\@citex\std@@citex
+  \global\let\@citew\std@@citew
+  \global\let\nocite\std@nocite
+  \global\let\Citealp\std@Citealp
+  \global\let\citealp\std@citealp
+  \global\let\Citealt\std@Citealt
+  \global\let\citealt\std@citealt
+  \global\let\citeasnoun\std@citeasnoun
+  \global\let\Citeauthor\std@Citeauthor
+  \global\let\citeauthor\std@citeauthor
+  \global\let\citeauthoryear\std@citeauthoryear
+  \global\let\Citep\std@Citep
+  \global\let\citep\std@citep
+  \global\let\citet\std@citet
+  \global\let\Citet\std@Citet
+  \global\let\citeyear\std@citeyear
+  \global\let\citeyearpar\std@citeyearpar
+  \@finishbibunit}
+\def\@initcite{\@startbibunit\cite}
+\def\@initnocite{\@startbibunit\nocite}
+\def\@initCitealp{\@startbibunit\Citealp}
+\def\@initcitealp{\@startbibunit\citealp}
+\def\@initCitealt{\@startbibunit\Citealt}
+\def\@initcitealt{\@startbibunit\citealt}
+\def\@initciteasnoun{\@startbibunit\citeasnoun}
+\def\@initCiteauthor{\@startbibunit\Citeauthor}
+\def\@initciteauthor{\@startbibunit\citeauthor}
+\def\@initciteauthoryear{\@startbibunit\citeauthoryear}
+\def\@initCitep{\@startbibunit\Citep}
+\def\@initcitep{\@startbibunit\citep}
+\def\@initcitet{\@startbibunit\citet}
+\def\@initCitet{\@startbibunit\Citet}
+\def\@initciteyear{\@startbibunit\citeyear}
+\def\@initciteyearpar{\@startbibunit\citeyearpar}
+\def\@startbibunit{%
+  \global\let\cite\bu@cite
+  \global\let\@citex\bu@@citex
+  \global\let\@citew\bu@@citew
+  \global\let\nocite\bu@nocite
+  \global\let\Citealp\std@Citealp
+  \global\let\citealp\std@citealp
+  \global\let\Citealt\std@Citealt
+  \global\let\citealt\std@citealt
+  \global\let\citeasnoun\std@citeasnoun
+  \global\let\Citeauthor\std@Citeauthor
+  \global\let\citeauthor\std@citeauthor
+  \global\let\citeauthoryear\std@citeauthoryear
+  \global\let\Citep\std@Citep
+  \global\let\citep\std@citep
+  \global\let\citet\std@citet
+  \global\let\Citet\std@Citet
+  \global\let\citeyear\std@citeyear
+  \global\let\citeyearpar\std@citeyearpar
+  \global\let\@finishbibunit\@finishstartedbibunit
+  \global\advance\@bibunitauxcnt 1
+  \if@filesw
+    {\endlinechar-1\@input{\@bibunitname.aux}}%
+    \immediate\openout\@bibunitaux\@bibunitname.aux
+    \immediate\write\@bibunitaux{\string\bibstyle{\@localbibstyle}}%
+  \fi}
+\let\@finishbibunit\relax
+\def\@finishstartedbibunit{%
+  \if@filesw
+    \immediate\closeout\@bibunitaux
+  \fi}
+\let\old@bibunit\@gobble
+\def\@bibunit{\endbibunit\bibunit\old@bibunit}
+\def\@endbibunit{}
+\def\bibliographyunit{%
+  \@endbibunit
+  \@ifnextchar[{\@bibliographyunit}{%
+    \global\let\old@bibunit\@gobble
+    \global\let\bibliography\std@bibliography
+    \global\let\bibliographystyle\std@bibliographystyle
+    \endbibunit
+    \gdef\@endbibunit{}}}
+\def\@bibliographyunit[#1]{%
+  \global\let\bibliography\bu@bibliography
+  \global\let\bibliographystyle\bu@bibliographystyle
+  \global\let\old@bibunit#1
+  \global\let#1\@bibunit
+  \gdef\@endbibunit{\global\let#1\old@bibunit}}
+\def\putbib{\@ifnextchar[{\@putbib}{\@putbib[\bu@bibdata]}}
+\def\@putbib[#1]{%
+  \if@filesw
+    \immediate\write\@bibunitaux{\string\bibdata{#1}}%
+  \fi
+  {\let\@auxout\@bibunitaux \@input{\@bibunitname.bbl}}}
+\def\remequivalent#1\from#2{%
+  \let\given=#1%
+  \ifx#2\empty
+  \else
+    \edef#2{\expandafter\plugh#2\plugh}%
+  \fi}
+\def\plugh\do#1#2{%
+  \ifx#1\given
+  \else
+    \noexpand\do\noexpand#1%
+  \fi
+  \ifx#2\plugh
+    \hgulp\fi\plugh#2}
+\def\hgulp\fi\plugh\plugh{\fi}
+\remequivalent\bibcite\from\@preamblecmds
+\AtBeginDocument{%
+  \@ifpackageloaded{natbib}%
+    {\renewcommand\bibcite[2]{\global\@namedef{b@#1\@extra@binfo}{#2}}}%
+    {\renewcommand\bibcite[2]{\global\@namedef{b@#1}{#2}}}%
+}
+\endinput
+%%
+%% End of file `bibunits.sty'.

@@ -1,0 +1,204 @@
+\documentclass[10pt]{article}
+
+%\usepackage{latex8}
+\usepackage{url}
+\usepackage{titlesec}
+
+\titleformat*{\section}{\large\bfseries}
+
+%\usepackage{helvet} \renewcommand{\familydefault}{\sfdefault} 
+
+\usepackage[ManyBibs,NoDate]{currvita}
+\usepackage{fullpage}
+\usepackage{bibunits}
+%\usepackage{url}
+
+%\textwidth 6.0in
+%\oddsidemargin -0.5in
+%\evensidemargin -0.5in
+%\textheight 8in
+\topmargin 0.5in
+
+\newcounter{bibctr}
+
+\newcommand{\mkbib}[1]{
+    \refstepcounter{bibctr}
+    \item[\hskip0pt plus1filll \hbox{[\arabic{bibctr}]}]
+    \begin{bibunit}[abbrv]
+      \nocite{#1}
+      \putbib[self]
+      \label{bib:#1}
+    % A bit more space
+    \vspace{5pt}
+    \end{bibunit}
+}
+
+\newcommand{\refbib}[1]{[\ref{bib:#1}]}
+
+\newcommand{\ie}{{\em i.e.}}
+\newcommand{\eg}{{\em e.g.}}
+
+%\def\up#1{\raise.16ex\hbox{#1}}
+
+\pagestyle{empty}
+
+%\title{Bill Howe}
+
+\begin{document}
+\begin{cv}{}
+
+%\maketitle
+%\thispagestyle{empty}
+\centerline{\Large Bill Howe}
+\vspace{0.5cm}
+
+\noindent University of Washington, Department of Computer Science and Engineering \\
+\noindent Box 351202, Seattle, WA 98195-2350 
+
+\section*{Professional Preparation}
+\noindent
+\begin{tabular}{p{0.30\linewidth}p{.15\linewidth}p{0.45\linewidth}p{0.10\linewidth}}
+Georgia Institute of Technology &  Atlanta, GA & BS, Honors, Industrial and Systems Engineering & 1999 \\
+Portland State University & Portland, OR & PhD, Commendation, Computer Science & 2006 \\
+\end{tabular}
+
+\section*{Appointments}
+\noindent
+\begin{tabular}{p{0.15\linewidth}p{0.85\linewidth}}
+
+2014-present & Associate Director, eScience Institute, University of Washington \\
+2014-present & Affiliate Associate Professor, Computer Science and Engineering, University of Washington \\
+2012-2014 & Director of Research, Scalable Data Analytics, eScience Institute, University of Washington \\
+2009-2014 & Affiliate Assistant Professor, Computer Science and Engineering, University of Washington \\
+2009-2012 & Senior Scientist, eScience Institute, University of Washington \\
+2008-2009 & Staff Scientist, NSF Science and Technology Center for Coastal Margin Observation and  Prediction, Oregon Health \& Science University \\
+2006-2008 & Senior Research Associate, NSF Science and Technology Center for Coastal Margin Observation and  Prediction, Oregon Health \& Science University \\
+2001-2006 & Graduate Research Assistant, Portland State University \\
+1999-2001 & Consultant, Deloitte Consulting, Microsoft, Schlumberger Inc., Siebel Systems. \\
+\end{tabular}
+
+\section*{Awards and Honors}
+{
+\renewcommand\arraystretch{1.3}% (MyValue=1.0 is for standard spacing)
+
+ \begin{tabular}{p{\linewidth}}
+\textbf{Best of VLDB 2010}, selected for publication in VLDB Journal special issue, for ``Haloop: Efficient iterative data processing on large clusters.'' (currently the most cited paper from VLDB 2010)\\
+\textbf{Jim Gray Seed Award}, Microsoft Research, \$40,000, April 2010.  Project: Client+Cloud: Bridging  the Gap Between Spreadsheets and Databases for eScience  \\
+\textbf{Jim Gray Seed Award}, Microsoft Research, \$25,000, April 2008.  Project: The eScience Appliance \\
+\textbf{Department Commendation Award}, Maseeh College of Engineering and Computer Science, Portland State University, May 2007 \\
+\textbf{Best of VLDB 2004}, one of 4 best papers (of 81) selected for publication in VLDB Journal special issue, for ``Algebraic manipulation of scientific datasets''\\
+ \end{tabular}
+}
+
+\vspace{-0.7cm}
+\section*{Publications most closely related to the proposal}
+
+\vspace{-0.7cm}
+\begin{cvlist}{{}}
+\item 
+\mkbib{ren:13} 
+\mkbib{shaw:12} 
+\mkbib{kwon:12} 
+\mkbib{vo:11} % LDAV/ Hadoop
+\mkbib{bu:10}       % HaLoop
+%\mkbib{howe:jei:03}      
+\end{cvlist}
+
+\section*{Other publications}
+
+\vspace{-0.6cm}
+\begin{cvlist}{{}}
+\item 
+%\mkbib{howe:ultravis:09}
+
+\mkbib{howe:11}
+\mkbib{kwon:10}
+\mkbib{grochow:10} 
+\mkbib{howe:ssdbm:09}       % Scientific applications
+\mkbib{howe:cidr:07}        % Scientific data management requirements
+%\mkbib{howe:iimas:08} % Scientific data management
+%\mkbib{howe:escience:08}    % Distrbuted systems; scientific data analysis
+%\mkbib{baptista:cse:08} % Scientific data systems   
+%\mkbib{howe:vldbjournal:04}  % Query processing on simulation data
+%\mkbib{hhowe:jei:03}         % Scientific applications
+\end{cvlist}
+
+\section*{Synergistic Activities}
+
+
+%A list of up to five examples that demonstrate the broader impact of the 
+%individual\u2019s professional and scholarly activities that focuses
+%on the integration and transfer of knowledge as well as its
+%creation. Examples could include, among others: innovations in
+%teaching and training (e.g., development of curricular materials and
+%pedagogical methods); contributions to the science of learning;
+%development and/or refinement of research tools; computation
+%methodologies, and algorithms for problem-solving; development of
+%databases to support research and education; broadening the
+%participation of groups underrepresented in science, mathematics,
+%engineering and technology; and service to the scientific and
+%engineering community outside of the individual\u2019s immediate
+%organization.
+
+\noindent {\bf eScience Institute}. Director of Research, Scalable Data Analytics; outreach and consulting for big data in the sciences (http://escience.washington.edu)
+
+\noindent {\bf Course development}. Designed a coursera MOOC ``Introduction to Data Science'' with over 100,000 registrants and 9,000 earned certificates Spring 2013; Developed a new Introductory "Data Programming" Course, Summer 2012; New course ``Data-Intensive Computing in the Cloud,'' Spring 2012; Advisory Board, Data Science Certificate, UW Educational Outreach; Advisory Board, Cloud Computing Certificate, UW Educational Outreach; ``Scientific Data Management'' (2010), University of Washington (with Magdalena Balazinska).
+
+\noindent {\bf Science Advisory Board Member}. SciDB project, http://scidb.org/
+
+\noindent{\bf Organizing Committee} Co-Chair, DataMASS 2012; Demo Co-chair, SSDBM 2013; Chair, HPCDB 2011/2012; XLDB Organizing Committee, 2011; Co-Chair, Workshop on Array Databases, 2011 (with Peter Baumann); Registration Chair, SSDBM 2011.
+
+\noindent{\bf Reviewer}.   Reviewer, PVLDB, 2012-2013; Program Committee, LDAV 2013; Program Committee, ScienceCloud 2012; Reviewer, VLDB Journal, 2011; Program Committee, EDBT 2011; Demo Program Committee, SIGMOD 2011; Registration Chair, SSDBM 2011. Program Committee Program Committee, SSDBM 2010. Reviewer, Journal of Parallel and Distributed Computing, May 2010.  Reviewer, VLDB Journal, 2007
+
+\section*{Collaborators and other affiliations}
+
+    %* 48 MONTHS - Collaborators and Co-Editors. A list of all persons in
+    %* alphabetical order (including their current organizational
+    %* affiliations) who are currently, or who have been collaborators
+    %* or co-authors with the individual on a project, book, article,
+    %* report, abstract or paper during the 48 months preceding the
+    %* submission of the proposal. 
+
+    %  24 MONTHS - Also include those individuals who
+    %* are currently or have been co-editors of a journal, compendium,
+    %* or conference proceedings during the 24 months preceding the
+    %* submission of the proposal. If there are no collaborators or
+    %* co-editors to report, this should be so indicated.
+
+    %* Graduate Advisors and Postdoctoral Sponsors. A list of the names
+    %* of the individual\u2019s own graduate advisor(s) and principal
+    %* postdoctoral sponsor(s), and their current organizational
+    %* affiliations.
+
+    %* Thesis Advisor and Postgraduate-Scholar Sponsor. A list of all
+    %* persons (including their organizational affiliations), with whom
+    %* the individual has had an association as thesis advisor, or with
+    %* whom the individual has had an association within the last five
+    %* years as a postgraduate-scholar sponsor. The total number of
+    %* graduate students advised and postdoctoral scholars sponsored
+    %* also must be identified.
+
+\noindent {\bf Collaborators (outside the University of Washington)}:
+
+ \begin{tabular}{p{\linewidth}}
+Matthew Arrott (UCSD),
+Roger Barga (Microsoft Research), 
+Mike Cafarella (University of Michigan),
+Ian Foster (University of Chicago),
+Christine Borgman (UCLA),
+Bryan Heidorn (Arizona),
+Carl Kesselman (USC),
+Lois Delcambre (Portland State University),
+Juliana Freire (NYU Poly),
+David Maier (Portland State University),
+Jerome Rolia (HP),
+Rich Signell (USGS),
+Claudio Silva (NYU Poly)
+\end{tabular}
+
+\noindent {\bf Advisors}:  David Maier, Portland State University, Thesis Advisor; Antonio Baptista, Oregon Health \& Science University, Postdoctoral Advisor
+
+\end{cv}
+
+\end{document}
+

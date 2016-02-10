@@ -1,0 +1,6 @@
+#!/bin/sh
+for file in bu*.aux
+do
+  echo bibtex -min-crossrefs=100 `basename $file .aux`
+  bibtex -min-crossrefs=100 `basename $file .aux`
+done
