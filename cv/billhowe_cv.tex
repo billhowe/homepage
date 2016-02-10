@@ -1,0 +1,524 @@
+
+% CV.tex -- William's CV latex file.
+\documentclass[10pt]{article}
+%\usepackage{times}
+%\usepackage{mathptm}
+%\usepackage{revnum}
+\newcommand{\comment}[1]{}
+\newcommand{\myname}{Bill Howe}
+\newcommand{\phone}{{\tt (404) 514-3003}}
+\newcommand{\email}{{\tt billhowe@cs.washington.edu}}
+\newcommand{\www}{{\tt \url{http://www.cs.washington.edu/~billhowe}}}
+\newcommand{\address}{5222 36th Ave \\
+Seattle, WA  98105}
+\newcommand{\ptitle}{\em}
+\usepackage{hyperref}
+%\usepackage[hyperindex,pdfmark]{hyperref}
+
+\hoffset=-.15\textwidth%
+\textwidth=1.30\textwidth%
+\voffset=-.05\textheight%
+%\voffset=-.09\textheight%
+\textheight=1.1\textheight%
+
+\usepackage{fancyhdr,ifthen}
+\pagestyle{fancy}
+\cfoot{\thepage}  % no footers (in pagestyle fancy)
+% running left heading
+\lhead{\bfseries\LARGE\em \noindent{}\hspace{-.2em}\myname{}
+        \hfill Curriculum Vitae -- March 2015\vspace{-.2ex}\\}
+% running right heading
+\newcommand{\spc}{1.0em}
+\rhead{\small
+\phone
+\hspace{\spc}$\cdot$\hspace{\spc}
+\email
+\hspace{\spc}$\cdot$\hspace{\spc}
+\www}
+% adjust, because the header is now taller than usual.
+\setlength{\headheight}{7ex}
+
+% bulleted list environment
+\newenvironment{bulletlist}
+   {
+      \begin{list}
+%         {$\bullet$}
+         {$\cdot$}
+         {
+            \setlength{\itemsep}{.5ex}
+            \setlength{\parsep}{0ex}
+            \setlength{\leftmargin}{0.7em}
+            \setlength{\parskip}{0ex}
+            \setlength{\topsep}{0ex}
+         }
+   }
+   {
+      \end{list}
+   }
+%end newenvironment
+
+\usepackage{revnum}
+
+\newcounter{totalnumworkshops}
+\setcounter{totalnumworkshops}{43}
+
+\newcounter{totalnumworkshopsf}
+\setcounter{totalnumworkshopsf}{8}
+
+\newcounter{totalnumpapers}
+\setcounter{totalnumpapers}{63}
+
+\newcounter{totalnumbooks}
+\setcounter{totalnumbooks}{4}
+
+\newenvironment{papers}
+   {
+   \begin{revnumerate}[\value{totalnumpapers}]
+   {}
+         {
+            \setlength{\itemsep}{.5ex}
+            \setlength{\parsep}{0ex}
+            \setlength{\leftmargin}{0em}
+            \setlength{\parskip}{0ex}
+            \setlength{\topsep}{0ex}
+         }
+   }
+   {
+\end{revnumerate}
+   }
+%end newenvironment
+
+\newenvironment{books}
+   {
+   \begin{revnumerate}[\value{totalnumbooks}]
+   {}
+         {
+            \setlength{\itemsep}{.5ex}
+            \setlength{\parsep}{0ex}
+            \setlength{\leftmargin}{0em}
+            \setlength{\parskip}{0ex}
+            \setlength{\topsep}{0ex}
+         }
+   }
+   {
+\end{revnumerate}
+   }
+
+\newenvironment{workshops}
+   {
+   \begin{revnumerate}[\value{totalnumworkshops}]
+   {}
+         {
+            \setlength{\itemsep}{.5ex}
+            \setlength{\parsep}{0ex}
+            \setlength{\leftmargin}{0em}
+            \setlength{\parskip}{0ex}
+            \setlength{\topsep}{0ex}
+         }
+   }
+   {
+\end{revnumerate}
+   }
+%end newenvironment
+
+\newenvironment{workshopsf}
+   {
+   \begin{revnumerate}[\value{totalnumworkshopsf}]
+   {}
+         {
+            \setlength{\itemsep}{.5ex}
+            \setlength{\parsep}{0ex}
+            \setlength{\leftmargin}{0em}
+            \setlength{\parskip}{0ex}
+            \setlength{\topsep}{0ex}
+         }
+   }
+   {
+\end{revnumerate}
+   }
+%end newenvironment
+
+\newenvironment{enumlist}
+   {
+   \begin{enumerate}
+   {}
+         {
+            \setlength{\itemsep}{.5ex}
+            \setlength{\parsep}{0ex}
+            \setlength{\leftmargin}{0em}
+            \setlength{\parskip}{0ex}
+            \setlength{\topsep}{0ex}
+         }
+   }
+   {
+\end{enumerate}
+   }
+%end newenvironment
+
+\newenvironment{dashlist}
+   {
+      \begin{list}
+         {\hspace{2em}--}
+         {
+            \setlength{\itemsep}{.5ex}
+            \setlength{\parsep}{0ex}
+            \setlength{\leftmargin}{1em}
+            \setlength{\parskip}{0ex}
+            \setlength{\topsep}{0ex}
+         }
+   }
+   {
+      \end{list}
+   }
+
+
+% bold sans-serif label for margin labels.
+%\newcommand{\marginlabel}[1]{{\large \textsf{\textbf{#1}}}}
+\newcommand{\marginlabel}[1]{
+\begin{minipage}[b]{0.8\labelwidth}{\large \textsf{\textbf{#1}}}\end{minipage}}
+
+%\newcommand{\marginlabel}[1]{\textsf{\textbf{#1}}}
+%\newcommand{\marginlabel}[1]{\textsf{\textbf{#1}}}
+%\newcommand{\marginlabel}[1]{\textsc{\textsc{#1}}}
+
+\newcommand{\entrylabel}[1]{\mbox{\marginlabel{#1}}\hfill}
+
+\newcommand{\MainListlabel}[1]
+   {
+      \parbox[t]{\labelwidth}{\hspace{.8em}\marginlabel{#1}}
+   }
+
+% a list with fixed width marginlabels.
+\newenvironment{MainList}[1]
+   {
+      \renewcommand{\entrylabel}{\MainListlabel}
+      \begin{list}{}
+      {
+         \renewcommand{\makelabel}{\entrylabel}
+         \setlength   {\itemindent}{-.65em}
+         \setlength   {\labelwidth}{#1}
+         \setlength   {\leftmargin}{\labelwidth}
+         \setlength   {\itemsep}{3ex}
+      }
+   }
+   {
+      \end{list}
+   }
+%end newenvironment
+
+\begin{document}
+\begin{MainList}{88pt}
+
+\item [Employment]
+\begin{bulletlist}
+\item {\bf University of Washington}: Associate Director and Senior Data Science Fellow, eScience Institute, 2013--present.
+\item {\bf University of Washington}: Program Director and Faculty Chair, Data Science Masters Degree, 2015--present.
+\item {\bf University of Washington}: Affiliate Associate Professor and member of the Graduate Faculty, 
+Computer Science \& Engineering, 2014--present.
+\item {\bf University of Washington}: Principal Research Scientist, 2013--present.
+\item {\bf University of Washington}: Affiliate Assistant Professor, 
+Computer Science \& Engineering, 2009--2014.
+\item {\bf University of Washington}: Senior Research Scientist, 2009--2013.
+Computer Science \& Engineering, 2009--2013.
+\item {\bf Oregon Health and Science University}: Research Scientist, 2007--2009.
+\item {\bf Portland State University}: Graduate Research Assistant, 2001--2006.
+\item {\bf Deloitte, Microsoft, Schlumberger, Siebel}: Consultant, 1999-2001.
+
+\end{bulletlist}
+
+\item [Education]
+\begin{bulletlist}
+\item {\bf Portland State University},
+      Ph.D. in Computer Science, 2007,
+{\ptitle GridFields: Model-driven Data Transformation in the Physical Sciences},
+under David Maier.
+\item {\bf Georgia Institute of Technology},
+     B.S. in Industrial and Systems Engineering, 1999.
+\end{bulletlist}
+
+\item [Grants]
+\begin{bulletlist}
+
+\item Lead PI, {\bf Department of Defense and PNNL} Polystore Data System, 2015-2016, \$500,000
+
+\item Lead PI, {\bf Macarthur Foundation} Advancing  the Seattle MetroLab, 2016-2017, \$250,000
+
+\item Co-PI {\bf NSF Big Data Hub, Western Region}, 2015-2018, \$1,200,000, with Ed Lazowska (UW), Airel Rokem (UW), Mike Franklin (UC Berkeley), and Mike Norman (SDSC)
+
+\item Lead PI, {\bf Department of Defense and PNNL} Unified Services for Federated Big Data Environment, 2015-2016, \$500,000
+
+\item Lead PI, {\bf Macarthur Foundation} Towards a Seattle Metro Consortium for Urban Data Science, 2014-2016, \$300,000
+
+\item Co-PI {\bf UW Provost's Office} Urban@UW, 2015-2017, \$750,000, with Thaisa Way (UW), Vikram Jandalaya (UW), Thom Dunning (PNNL)
+
+\item Co-PI, {\bf Gordon and Betty Moore Foundation and the Alfred P. Sloan Foundation}, Data Science Environments, 2014-2019, \$32.8M, with NYU and UC Berkeley
+
+\item Co-PI, {\bf Intel Science and Technology Center for Big Data}, 2014-2016, \$125,000, one part of large distributed group across MIT, Brown, UW, and Portland State
+
+\item Lead PI, {\bf PNNL Subcontract} Hybrid Architectures for Graph Query, 2014-2015, \$200,000
+
+\item Co-PI, {\bf NSF Grant} IIS-1247469, BIGDATA:A Formal Foundation for Big Data Management, 2013-2016, \$2,966,667, with Dan Suciu (UW) and Magda Balazinska (UW)
+
+\item Lead PI, {\bf PNNL Subcontract} Hybrid Languages for Graph Query, 2013-2014, \$100,000
+
+\item Co-PI, {\bf NSF Grant} ACI-1216879, Collaborative Research: Conceptualizing An Institute for Empowering Long Tail Research, 2012-2014, \$500,000, with Ian Foster (UChicago), Bryan Heidorn (UArizona), Christine Borgman (UCLA), Carl Kesselman (USC)
+
+\item Lead PI, {\bf NSF Grant} IIS-1064505, Collaborative Research: Database-As-A-Service for Long Tail Science
+2011-2013, \$800,000, with Mike Cafarella (UMich), David Maier (Portland State), and Dan Suciu (UW).
+
+\item Co-PI, {\bf EMC Grant} Large-Scale Visual Analytics, 2012-2014, \$200,000, with Magda Balazinska (UW)
+
+\item Co-PI, {\bf NSF Grant} CCF-1047815, Relational Data Markets in the Cloud, 2011-2013, \$370,000, with Magda Balazinska (UW) and Dan Suciu (UW)
+
+\item Lead PI, {\bf NSF Grant} CCF-1060213, EAGER: Scalable Algebraic Visualization in the Cloud, 2010-2011 \$117,567
+
+\item Co-Lead, {\bf Gordon and Betty Moore Foundation}, Data-Intensive Science in the Long Tail, 2010-2013, \$750,000, with Ed Lazowska
+
+\item Lead PI, {\bf NSF Grant} IIS-0844572, Collaborative Research: Where the Ocean Meets the Cloud: Ad Hoc Longitudinal Analysis and Collaboration Over Massive Mesh Data, 2009-2011, \$500,000, with Claudio Silva (NYU) and Juliana Freire (NYU).
+
+\end{bulletlist}
+
+\item [Honors]
+\begin{bulletlist}
+
+
+\item {\bf Best of VLDB 2010}, selected for publication in VLDB Journal special issue, for ``Haloop: Efficient iterative data processing on large clusters.'' (currently the most cited paper from VLDB 2010)
+
+\item {\bf Microsoft Jim Gray Seed Grant} 2010, \$25,000
+
+\item {\bf Microsoft Jim Gray Seed Grant} 2007, \$40,000
+
+\item {\bf Department Dissertation Award}, Maseeh College of Engineering and Computer Science, Portland State University, May 2007
+
+\item {\bf Best of VLDB 2004}, selected for publication in VLDB Journal special issue, for ``Algebraic manipulation of scientific datasets'' 
+
+\end{bulletlist}
+
+\item[Publications] 
+See also \url{https://scholar.google.com/citations?user=dQ-x9NQAAAAJ}
+
+\input{publications}
+
+
+\item [Teaching]
+
+
+{\bf University of Washington}
+\begin{bulletlist}
+\item Program Director and Faculty Chair, Masters of Science in Data Science, 2015
+\item {\em Introduction to Data Science} (Coursera), Summer 2014, 100,000+ students.
+\item {\em Introduction to Data Science} (Coursera), Spring 2013, 100,000+ students.
+\item Founder, University Education Outreach Certificate in Data Science, 2013
+\item Founder, University Education Outreach Certificate in Cloud Computing, 2013
+\item {\em Introduction to Data Programming}, Winter 2013.
+\item {\em Introduction to Data Science} (PCE Certificate), Fall 2012.
+\item {\em CSE 190p Introduction to Data Programming with Applications}, Summer 2012.
+\item {\em Data-Intensive Computing in the Cloud}  (PCE Certificate), Fall 2012.
+\item {\em CS599c Scientific Data Management}, Winter 2011.
+\item {\em CSE344 Introduction to Data Management}, Fall 2010
+\end{bulletlist}
+
+
+{\bf Portland State University}
+\begin{bulletlist}
+\item {\em Scientific Data Management}, Spring 2006.
+\end{bulletlist}
+
+\item [Students]
+
+\begin{bulletlist}
+\item {\bf Brandon Myers}, CSE (with Mark Oskin), Ph.D. expected June 2016 (query compilation, high-peformance computing)
+\item {\bf Poshen Lee}, EE, Ph.D. expected August 2016 (machine vision
+\item {\bf Shrainik Jain}, CSE, Ph.D. expected June 2018 (polystores, high-variety databases)
+\item {\bf Dylan Hutchison}, CSE, Ph.D. expected June 2020.
+\item {\bf Dominik Moritz} (co-advised with Jeff Heer), Ph.D. expected June 2019.
+\item {\bf YongChul Kwon} (co-advised with Magda Balazinska), Ph.D. received June 2011.
+    Skew-Resistant Parallel Computation.  now with Microsoft.
+\item {\bf Jeremy Hyrkas}, CSE (Big data applications, analytics for science) now at Microsoft
+\item {\bf Yongchul Kwon} CSE — Big data systems, fault-tolerance, skew handling. Now at Microsoft
+\item {\bf Yingyi Bu} CSE — Big data systems and languages. Moved to UC Irvine
+\item {\bf Tanmay Modak} iSchool Masters — Visual analytics, machine learning
+\item {\bf Elton Dias} iSchool Masters — Visual analytics, machine learning
+\item {\bf Abhigyan Kaustubh} iSchool Masters — Visual analytics, machine learning
+\end{bulletlist}
+
+\item [Postdocs]
+
+\begin{bulletlist}
+\item {\bf Seung-Hee Bae}, CSE postdoc (Graph clustering algorithms, HPC + big data)
+\item {\bf Sophie Clayton}, eScience postdoc (Environmental flow cytometry, analytics)
+\item {\bf Dan Halperin}, CSE Postdoc and Senior Research Scientist. Now at Google
+\item {\bf Andrew Whitaker}, CSE Research Scientist.  Now at Amazon
+\item {\bf Marianne Shaw}, CSE Postdoc. Now at Tableau
+\end{bulletlist}
+
+
+\item [Staff]
+\begin{bulletlist}
+\item {\bf Sarah Stone}, PhD Oceanography, Program Manager
+\item {\bf Micaela Parker}, PhD Oceanography, Program Manager
+\item {\bf Rob Fatland}, PhD Physics, Director of Cloud and Data Solutions
+\item {\bf Jacob Vanderplas}, PhD Astronomy, eScience Data Scientist 
+\item {\bf Ariel Rokem}, PhD Neuroscience, eScience Data Scientist 
+\item {\bf Bernease Herman}, eScience Data Scientist
+\item {\bf Valentina Staneva}, PhD Applied Math, eScience Data Scientist
+\end{bulletlist}
+
+
+\item [Panels/Reports]
+\begin{bulletlist}
+\item Co-PI, NSF Western Big Data Hub
+\item Co-founder, Urban@UW
+\item Director, Seattle MetroLab
+\item Chair, {\em Should we all be teaching intro to data science instead of intro to databases?}, Panel, Proceedings of the 2014 ACM SIGMOD international conference on Management of data.
+\item Co-Organizer, {\em Designing good algorithms for MapReduce and beyond}, Proceedings of the Third ACM Symposium on Cloud Computing. 2014.
+\item Co-Organizer, {\em Education and career paths for data scientists}, Panel, Magdalena Balazinska, Susan B Davidson, Bill Howe, Alexandros Labrinidis, Proceedings of the 25th International Conference on Scientific and Statistical Database Management. 2013.
+\item Chair, High-Performance Computing Meets Databases, 2011
+\item Chair, High-Performance Computing Meets Databases, 2010
+\end{bulletlist}
+
+\item [Recent Talks]
+
+\begin{bulletlist}
+  \item Over the last three years I gave invited
+  talks at Los Alamos National Labs, Illinois, UC Berkeley, Indiana, Penn State, Intel, the Department of Defense, 
+  the American Geophysical Union, the Joint Statistical Meetings, Pacific Northwest National Labs, UCBerkeley,
+  the Allen Institute for Brain Science, the Macarthur Foundation, Microsoft Research
+  \item Keynote, Cloud Data Management Workshop (with ICDE), 2016, Helsinki
+  \item Invited Talk, “Urban Data Science @ UW”, NIAC Workshop on Smart Cities, 2016
+  \item Invited Talk, “High Productivity Computing”, Los Alamos National Lab, November 2015
+  \item Invited Talk, “High Productivity Computing”, Chesapeake Large-Scale analytics Conference, October 2015
+  \item Invited Talk, “High Productivity Computing”, Neurofutures Symposium, Portland, August 2015
+  \item Invited Talk, ITIC and Macarthur workshop ``Partnership for Sustainable Smart Cities of the Future''
+  \item Invited Talk, National Research Council Meeting on ``Training the Big Data Workforce''
+  \item Keynote at eXtremely Large Databases, South America, 2014
+  \item Invited Talk at JSM panel on Big Data Education: Big Data Curricula at the UW eScience Institute.
+  \item Invited Talk on Myria and scalable graph clustering at the MMDS workshop at UC Berkeley, 2014.
+  \item Keynote at eResearch New Zealand, eScience and Data science at the University of Washington's eScience Institute, 2013
+  \item For a partial list of presentations, see \url{http://www.slideshare.net/billhoweuw}
+\end{bulletlist}
+
+
+\item [Program Committees and Editing]
+\begin{bulletlist}
+\item Program Chair, eScience 2016
+\item Program Committee, HotCloud 2014
+\item Program Committee, eScience 2014
+\item Program Committee, SSDBM 2013
+\item Program Committee, LDAV 2013
+\item Chair, Workshop on HPC meets Databases, co-located with Supercomputing 2012
+\item Program Committee, ICDE 2013
+\item Program Committee, PVLDB 2012-2013
+\item Demo Co-chair, SSDBM 2012
+\item Program Committee, ScienceCloud 2012
+\item Chair, Workshop on HPC meets Databases, co-located with Supercomputing 2011
+\item Editorial Board, Journal of Data Semantics
+\item Organizing Committee, XLDB 2011
+\item Program Committee, LDAV 2011
+\item Program Committee, ScienceCloud 2011
+\item Co-Chair, Workshop on Array Databases
+\item Registration Chair, SSDBM 2011
+\item Program Committee, SSDBM 2011
+\item Demonstrations Program Committee, SIGMOD 2011
+\item Program Committee, EDBT 2010
+\item Program Committee, SSDBM 2010
+\item Program Committee, IIMAS Workshop, 2008
+\item Reviewer, VLDB Journal, 2007
+\item Program Committee, dg.o 2006
+\item Program Committee, dg.o 2005
+\item Demonstrations Program Committee, SIGMOD 2005
+\item Student Session Program Committee, dg.o 2004
+\end{bulletlist}
+
+
+\item [Activities]
+\begin{bulletlist}
+\item Associate Director of the eScience Institute, responsible for management of the staff, operations, and program development.
+\item Program Director and Faculty Chair, Data Science Masters Degree.  Led curriculum design, program design, hiring
+\item Co-founder, Urban@UW
+\item Director, Seattle MetroLab
+\item Launched a free campus-wide service based on our research data management system SQLShare in partnership with UW-IT
+\item Lead, Twitter Data Grant Program, University of Washington.
+\item Designed and implemented the UW eScience Incubation Program for Data-Intensive Science Projects
+\item Attended the National Research Council meeting on ``Training the Big Data Workforce,'' 2014
+\item Founder, University Education Outreach Certificate in Data Science, University of Washington, 2013
+\item Founder, University Education Outreach Certificate in Cloud Computing, University of Washington, 2013
+\item Designed and operated {\em Introduction to Data Science} online course on Coursera, attracting 200,000+ students across two offerings
+\end{bulletlist}
+
+
+  % \begin{center}
+  % ------------------------------------------------------------------------------------
+  % \end{center}
+
+\item [Personal]
+\address{}\\\newline
+Phone: \phone\\
+Email: \email\\
+Web: \www \\
+Citizenship: USA\\
+
+
+%\newpage
+% \item [References]\mbox{}\\
+% \newcommand{\tw}{.4\textwidth}
+
+% \hspace{-2em}\begin{tabular}{ll}
+% \begin{minipage}[b]{\tw}
+% {\bf Professor Benedict H. Gross}\\
+% Department of Mathematics\\
+% Harvard University\\
+% Cambridge, MA  02138\\
+% (617) 495-2172\\
+% {\tt gross@math.harvard.edu}
+% \end{minipage}
+% &
+% \begin{minipage}[b]{\tw}
+% {\bf Professor Joe Harris}\\
+% Department of Mathematics\\
+% Harvard University\\
+% Cambridge, MA  02138\\
+% (617) 495-2172 \\
+% {\tt harris@math.harvard.edu}
+% \end{minipage}
+% \\&\\
+% \begin{minipage}[b]{\tw}
+% {\bf Professor Hendrik W.~Lenstra}\\
+% Mathematisch Instituut\\
+% Universiteit Leiden\\
+% The Netherlands\\
+% (31/0) 71 527-7127\\
+% {\tt hwl@math.leidenuniv.nl}
+% \end{minipage}
+% &
+% \begin{minipage}[b]{\tw}
+% {\bf Professor Barry C.~Mazur}\\
+% Department of Mathematics\\
+% Harvard University\\
+% Cambridge, MA  02138\\
+% (617) 495-2171 ext.~512\\
+% {\tt mazur@math.harvard.edu}
+% \end{minipage}
+% \\&\\
+% \begin{minipage}[b]{\tw}
+% {\bf Professor Kenneth A.~Ribet}\\
+% Department of Mathematics\\
+% University of California\\
+% Berkeley, CA 94720-3840\\
+% (510) 642-0648\\
+% {\tt ribet@math.berkeley.edu}
+% \end{minipage}
+% &
+% \begin{minipage}[b]{\tw}
+% {\bf Professor John Tate (Emeritus)}\\
+% Department of Mathematics\\
+% Harvard University\\
+% Cambridge, MA  02138\\
+% {\tt jtate@math.harvard.edu}\\
+% \end{minipage}
+% \end{tabular}
+
+\end{MainList}
+
+\end{document}
+

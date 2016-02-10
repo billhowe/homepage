@@ -16,6 +16,7 @@ title: "Bill Howe: Academic Homepage"
       Affiliate Associate Professor, Computer Science &amp; Engineering<br>
       Program Director and Faculty Chair, UW Data Science Masters Degree<br>
       University of Washington<br>
+      <a href="static/billhowe_cv.pdf">vita</a>
       <br>
       Email: billhowe at cs.washington.edu
     </p>
@@ -27,16 +28,14 @@ title: "Bill Howe: Academic Homepage"
 I am Associate Director and Senior Data Science Fellow at the <a href="http://escience.washington.edu">UW eScience Institute</a> and Affiiate Associate Professor in Computer Science &amp; Engineering.  I am a co-founder of <a href="http://urban.uw.edu/">Urban@UW</a>, and with support from the MacArthur Foundation and Microsoft, I lead UW's participation in the <a href="http://metrolab.heinz.cmu.edu/">MetroLab Network</a>. I created a <a href="https://www.coursera.org/course/datasci">first MOOC on Data Science</a> through Coursera, and I led the creation of the <a href="http://datasciencemasters.uw.edu/">UW Data Science Masters Degree</a>, where I serve as its first Program Director and Faculty Chair. I am a member of the UW Graduate Faculty. 
 </p>
 <p>
-My group's research aims to make the techniques and technologies of data science more accessible, particularly at scale.  Our methods are based in database systems, though we sometimes work in machine learning, visualization, HCI, and high-performance computing.  We are an applied, systems-oriented group, frequently sourcing projects through collaborations in the physical, life, and social sciences.  
+My group's research aims to make the techniques and technologies of data science more accessible, particularly at scale.  Our methods are rooted in database systems, though we sometimes work in machine learning, visualization, HCI, and high-performance computing.  We are an applied, systems-oriented group, frequently sourcing projects through collaborations in the physical, life, and social sciences.  
 </p>
 
 <hr>
 
-<h2>Recent Projects</h2>
-
 <div class="container">
 
-  {% for post in site.categories.projects limit:6 %}
+  {% for post in site.categories.projects limit:10 %}
 
   {% assign loopindex = forloop.index | modulo: 2 %}
   {% if loopindex == 1 %}

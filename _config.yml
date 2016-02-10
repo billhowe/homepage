@@ -1,18 +1,18 @@
-baseurl: /homes/billhowe
+baseurl: /~billhowe/
 exclude: [README.md, deploy.sh]
 highlighter: pygments
 gems: ['jekyll/scholar']
 
 scholar:
-  style: apa
+  style: ieee
   locale: en
 
-  repository: pdf
+  repository: publications/pdfs
  
   sort_by: year,month
   order: descending
 
-  group_by: year
+  group_by: none
   group_order: descending
 
   source: ./publications

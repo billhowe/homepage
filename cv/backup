@@ -1,0 +1,325 @@
+
+{\bf Peer-Reviewed Conferences}
+\begin{bulletlist}
+
+\item Myers, Brandon,
+Daniel Halperin, Jacob Nelson, Mark Oskin, Luis Ceze, and Bill Howe.
+Radish: Compiling efficient query plans for distributed shared memory.
+\emph{in preparation}
+
+\item Hyrkas, Jeremy, Daniel Halperin, and Bill Howe. 2014. 
+Time-Varying Clusters in Large-Scale Flow Cytometry, \emph{Innovative Applications of Artificial Intelligence} (2014)
+
+\item Alawini, Abdussalam, David Maier, Kristin Tufte, and Bill Howe. 2014. 
+Helping scientists reconnect their datasets. \emph{Proc. of the 22nd 
+Scientific and Statistical Database Management Conference SSDBM} (2014).
+
+\item Upadhyaya, Prasang, Nick R. Anderson, Magdalena Balazinska, Bill
+Howe, Raghav Kaushik, Ravishankar Ramamurthy, and Dan Suciu. 2013. Stop
+that query! The need for managing data use. \emph{Sixth Biennial Conference 
+on Innovative Data Systems Research {CIDR}} (2013).
+
+\item Halperin, Daniel, Konstantin Weitz, Bill Howe, Francois Ribalet, Mark A. Saito,
+and E. Virginia Armbrust. 2013. Real-time Collaborative Analysis with
+(almost) Pure SQL: A Case Study in Biogeochemical Oceanography.
+\emph{Proc. of the 21st Scientific and Statistical
+Database Management Conference (SSDBM)} (2013). 
+
+\item Perry, Daniel, Bill Howe, Alicia M. F. Key, Cecilia Aragon. 2013. 
+VizDeck: Streamlining Exploratory Visual Analytics of Scientific Data.
+\emph{iConference 2013 Proceedings} (2013) pages 338--350. doi:10.9776/13206 
+
+\item Koutris, Paraschos, Prasang Upadhyaya, Magdalena
+Balazinska, Bill Howe, and Dan Suciu. 2013. Toward Practical Query
+Pricing with QueryMarket. \emph{SIGMOD conference} (2013), 613--624.
+
+\item Koutris, Paraschos, Prasang Upadhyaya, Magdalena Balazinska, Bill
+Howe, and Dan Suciu. 2012. Query-based data pricing. \emph{Proceedings of the 31st ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems {PODS}} (2012),
+167--178. 
+
+\item Kwon, YongChul, Magdalena
+Balazinska, Bill Howe, and Jerome A. Rolia. 2012. SkewTune: Mitigating
+Skew in Mapreduce Applications. \emph{SIGMOD conference} (2012), pages 25--36.
+
+\item Shaw, Marianne, Bill Howe, Paris Koutris, and
+Dan Suciu. 2012. Optimizing Large-Scale Semi-Naive Datalog Evaluation in
+Hadoop. \emph{Datalog 2.0} (2012). 
+
+\item Howe, Bill, Alicia Key, Daniel Perry, and Cecilia R. Aragon. 2012. VizDeck: A card
+game metaphor for fast visual data exploration. \emph{Proceedings of the 30th International Conference on Human Factors in Computing Systems} (2012), pages 1667--1672. 
+
+\item AlSayyad, Yusra, Simon K. Krughoff, Bill Howe, Andrew J Connolly, Magdalena Balazinska,
+and Jones, Lynne. 2011. Towards efficient and precise queries over ten million asteroid trajectory models, \emph{Proc. of the 23rd Scientific and Statistical
+Database Management Conference (SSDBM)} (2011), pages 568--570.
+
+\item Balazinska, Magdalena, Bill Howe, and Dan Suciu,
+Data Markets in the Cloud: An Opportunity for the Database Community,
+\emph{Proceedings of the VLDB Endowment} PVLDB, 4, 12, 2011. 
+
+\item Vo, Huy, Brian Summa, Joao Comba, Juliana Freire, Bill Howe, Claudio Silva, and Valerio
+Pascucci. 2011. Parallel visualization on large clusters using
+mapReduce. \emph{{IEEE} Symposium on Large-Scale Data Analysis and Visualization, {LDAV}}
+(2011)
+
+\item Howe, Bill, Garret Cole, Emad Souroush, Paraschos Koutris, Alicia Key, Nodira
+Khoussainova, and Leilani Battle. 2011. Database-as-a-service for long
+tail science. \emph{Proc. of the 23rd Scientific and Statistical
+Database Management Conference (SSDBM)} (2011). 
+
+\item Grochow, Keith, Mark Stoermer, James Fogarty, Charlotte Lee, Bill Howe, and Ed Lazowska. 2010. COVE: A Visual Environment for Multidisciplinary Ocean Science Collaboration,
+\emph{IEEE Sixth International Conference on eScience (eScience)}, pages 269--276.
+
+\item Kwon, YongChul, Dylan Nunley, Jeffrey P Gardner, Magdalena Balazinska, Bill Howe, and Sarah Loebman. 2010. Scalable clustering algorithm for N-body simulations in a shared-nothing cluster, \emph{Proc. of the 22nd Scientific and Statistical
+Database Management Conference (SSDBM)}, (2010), pages 132--150.
+
+\item Kwon, YongChul, Magdalena Balazinska, Bill Howe, and Jerome Rolia.
+2010. Skew-resistant parallel processing of feature-extracting
+scientific user-defined functions. \emph{Proc. of the ACM Symposium on
+Cloud Computing (SOCC)} (2010). 
+
+\item Bu, YingYi, Bill Howe, Magdalena Balazinska, and Michael Ernst. 2010.
+HaLoop: Efficient iterative data processing on~large~clusters.
+\emph{Proc. of International Conf. on Very Large Databases (VLDB)} (Selected for Best of VLDB Issue of VLDB Journal
+
+\item Grochow, Keith, Bill Howe, Mark Stoermer, and Ed Lazowska. 2010. Client + cloud: Seamless
+architectures for visual data analytics in the ocean sciences.
+\emph{Proceedings of the 22nd international conference on scientific and
+statistical database management (SSDBM)} (2010). 
+
+
+\item Howe, Bill, Harrison Green-Fishback, and David Maier. 2009. Scientific Mashups:
+Runtime-Configurable Data Product Ensembles. \emph{Proceedings of the
+21st international Conference on Scientific and Statistical Database
+Management (SSDBM)} (2009). 
+
+\item Howe, Bill, Peter Lawson, Renee
+Bellinger, Erik Anderson, Emanuele Santos, Juliana Freire, Carlos
+Scheidegger, Antonio Baptista, and and Claudio T. Silva. 2008.
+End-to-End eScience: Integrating Workflow, Query, Visualization, and
+Provenance at an Ocean Observatory. \emph{4th iEEE international
+Conference on eScience (eScience)} (2008).
+
+\item Howe, Bill, David Maier, and Laura Bright. 2007. Smoothing the ROI
+curve for scientific data management applications. \emph{Proceedings of
+the Third Biennial Conference on Innovative Data Systems Research (CIDR)} 
+(2007). 
+
+\item Howe, Bill and David Maier. 2005. Retrofitting a Data Model to Existing
+Environmental Data. \emph{Proceedings of the 17th international
+conference on Scientific and Statistical Database Management (SSDBM)} 
+(Santa Barbara, CA, June 2005). 
+
+\item Howe, Bill, and David Maier. 2004.
+Algebraic Manipulation of Scientific Datasets. 
+\emph{Proceedings of the 30th International Conference on Very Large Data
+bases} (2004) (Selected for Best of VLDB Issue of VLDB Journal). 
+
+%\item Marianne Koch, Lois Delcambre,
+%Patricia Toccalino, Eric Landis, Fred Phillips, Tim Tolle,
+%Len Shapiro, Nicole Steckler, David Maier, Mathew Weaver,
+%Shawn Bowers, Balbinder Banga,
+%Jason Brewster, Afrem Gutema, Sudarshan Murthy, Bill Howe, Rupa Tummala,
+%Julia Norman, Kirsten Zillman,
+%David Drake, Craig Palmer,
+%Ashley Burt. 2003. The forest portal: a multidisciplinary project, 
+%  \emph{Proceedings of the 2003 annual national conference on Digital government research},
+%(2003), pages 1--4.
+
+\item Weaver, Mathew, Bill Howe, Lois Delcambre, Tim Tolle, and David Maier. 2002. 
+Representing, exploiting, and extracting metadata using metadata++,
+\emph{Proceedings of the 2002 annual national conference on Digital government research},
+(2002), pages 1--7.
+
+\end{bulletlist}
+
+
+{\bf Journal Articles}
+\begin{bulletlist}
+
+\item Balazinska, Magdalena, Bill Howe, Dan Suciu,
+The Database Group at the University of Washington,
+\emph{ACM SIGMOD Record}, 43, 1 (2014) pages 39--44
+
+\item Kwon, Kai Ren YongChul, Magdalena Balazinska, and Bill Howe. 2013. Hadoop's
+adolescence: An analysis of hadoop usage in scientific workloads.
+\emph{PVLDB} (2013). 
+
+\item Howe, Bill, Francois Ribalet, Daniel
+Halperin, Sagar Chitnis, and E. Virginia Armbrust. 2013. Collaborative
+Science Workflows in SQL. \emph{Computing in Science \& Engineering,
+Special Issue on Science Data Management}. 15, 3 (May/June 2013) pages 22--31, 
+doi:10.1109/MCSE.2013.42
+
+%\item Howe, Bill, Francois Ribalet, Daniel Halperin, Sagar Chitnis, E Virgnia Armbrust. 
+%2013. SQLShare: Scientific Workflow via Relational View Sharing},
+%\emph{Computing in Science \& Engineering}, Special Issue on Science Data Management, 15, 2 (2013)
+
+\item Howe, Bill and Daniel Halperin. 2012. 
+Advancing Declarative Query in the Long Tail of Science. 
+\emph{IEEE Data Engineerin Bulletin},
+35, 3. (2012). pages 16--26.
+
+\item Bu, YingYi, Bill Howe, Magdalena Balazinska, and Michael
+Ernst. 2012. The HaLoop approach to large-scale iterative data analysis.
+\emph{Special Issue: Best of VLDB 2010} VLDB Journal, 21, 2 (2012).
+
+\item Barga, Roger, Bill Howe, David Beck, Stuart Bowers, William Dobyns, Winston Haynes, 
+Roger Higdon, Chris Howard, Christian Roth, Elizabeth Stewart and others. 2011.
+Bioinformatics and data-intensive scientific discovery in the beginning of the 21st century,
+\emph{Omics: A Journal of Integrative Biology}, 15, 4 (2011), pages 199--201
+
+\item Balazinska, Magdalena, Bill Howe, and Dan Suciu,
+Data Markets in the Cloud: An Opportunity for the Database Community,
+\emph{Proceedings of the VLDB Endowment} PVLDB, 4, 12, 2011. (Also in conference)
+
+\item Wiley, Keith, Andrew J. Connolly, Jeffrey P. Gardner,
+               K. Simon Krughoff, Magdalena Balazinska,
+               Bill Howe, YongChul Kwon, Yingyi Bu. 2010.
+Astronomy in the Cloud: Using MapReduce for Image Coaddition,
+\emph{CoRR}, abs/1010.1015, 2010
+
+\item Baptista, Antonio, Bill Howe, Juliana Freire, David Maier, 
+and Claudio T. Silva. 2008.
+Scientific exploration in the era of ocean observatories.
+\emph{Computing in Science and Engineering}. 10, 3 (2008), 53--58.
+
+\item Howe, Bill, and David Maier. 2004. Logical and Physical Data Independence for
+File-based Scientific Applications. \emph{IEEE Data Eng. Bull.} 27, 4
+(2004), 30--37. 
+
+\item Howe, Bill David Maier, and Antonio Baptista. 2003. A language for spatial data manipulation.
+\emph{Journal of Environmental Informatics}. 2, 2 (December 2003).
+
+\item Howe, Bill and David Maier.
+2004. Algebraic manipulation of scientific datasets. \emph{VLDB Journal:
+The International Journal On Very Large Data Bases (Special Issue: Best of VLDB 2004)}. 14, 4 (2004). 
+
+\end{bulletlist}
+
+{\bf Book Chapters}
+
+\begin{bulletlist}
+
+\item Howe, Bill, 2014. Reproducibility, Virtual Appliances, and Cloud Computing, 
+Chapter 10 in Victoria Stodden, Friedrich Leisch, Roger D. Peng (Ed.) 
+\emph{Implementing Reproducible Research}, Chapman and Hall/CRC.
+
+\item Balazinska, Magdalena, Bill Howe, Parachos Koutris, Dan Suciu and Prasang Upadhyaya. 2013. A Discussion on Pricing Relational Data, In Search of Elegance in the Theory and Practice of Computation, pages 167--173, Springer Berlin Heidelberg.
+
+\item Howe, Bill, 2013. Transforming Data into the Appropriate Science Context, Chapter 11 in Terence Critchlow, Kerstin Kleese van Dam (Ed.) \emph{Data-Intensive Science}, 
+Chapman and Hall/CRC.
+
+\item Howe, Bill and Magda Balazinska, 2012. Beyond MapReduce: New Requirements for Scalable Data Processing, Chapter 8 in Ian Gorton and Deborah K. Gracio (Ed.), \emph{Data-Intensive Computing}, Cambridge University Press.
+
+\emd{bulletlist}
+
+
+{\bf Peer-Reviewed Demonstrations}
+\begin{bulletlist}
+
+\item Halperin, Daniel, Victor Teixeira de Almeida, Lee Lee Choo, Shumo Chu, 
+Parachos Koutris, Dominik Moritz, Jennifer Ortiz, Vaspol Ruamviboonsuk, Jingjing Wang, 
+Jingjing and Andrew Whitaker, Shengliang Xu, Magdalena Balazinska, Bill Howe, Dan Suciu, 
+Demonstration of the Myria big data management service,
+\emph{Proceedings of the 2014 ACM SIGMOD International Conference on Management of Data},
+(2014), pages 881--884.
+
+\item Upadhyaya, Prasang, Nick R. Anderson, Magdalena Balazinska, Bill
+Howe, Raghav Kaushik, Ravishankar Ramamurthy, and Dan Suciu. 2013. The
+power of data use management in action. \emph{SIGMOD} (2013),
+pages 1117--1120. 
+
+\item Key, Alicia, Bill Howe, Daniel
+Perry, and Cecilia R. Aragon. 2012. VizDeck: Self-organizing dashboards
+for visual analytics. \emph{SIGMOD conference} (2012), 681--684.
+
+\item Howe, Bill, Garret Cole, Nodira Khoussainova, Leilani Battle. 2011.
+Automatic Example Queries for Ad Hoc Databases,
+\emph{Proceedings of the 2011 ACM SIGMOD International Conference on Management of data}. (2011), pages 1319--1322
+
+\item Howe, Bill, and David Maier. 2005. Querying and Visualizing Gridded
+Datasets for eScience (demo). \emph{21st international conference on
+data engineering (ICDE '05) (demo)} (Tokyo, Japan, 2005). 
+
+\end{bulletlist}
+
+{\bf Peer-Reviewed Workshop Papers}
+\begin{bulletlist}
+
+\item Joslyn, Cliff, Sutanay Choudhury, David Haglin, Bill Howe, Bill Nickless, Bryan Olsen. 2013. Massive-Scale Cyber Traffic Analysis: A Driver for Graph Database Research,
+\emph{First International Workshop on Graph Data Management Experiences and Systems} GRADES (2013).
+
+\item Myers, Brandon, Jeremy Hyrkas, Daniel Halperin, and Bill
+Howe. 2013. Compiled plans for in-memory path-counting queries.
+\emph{Proceedings of the 1st international workshop on In Memory Data
+Management and Analytics, IMDM} (2013), 25--37. 
+
+\item Howe, Bill and Garret Cole. 2010. 
+SQL is dead; long live SQL: Lightweight query services for ad hoc research data.
+\emph{4th Microsoft eScience Workshop} (2010)
+
+\item Loebman, Sarah, Dylan Nunley, YongChul Kwon, Bill Howe, Magdalena Balazinska, Jeffrey P Gardner}, Analyzing massive astrophysical datasets: Can Pig/Hadoop or a relational DBMS help?, 
+\emph{IEEE International Conference on Cluster Computing} CLUSTER (2009), pages 1--10.
+
+\item Suciu, Dan, Andrew J Connolly, and Bill Howe. 2009. 
+Embracing Uncertainty in Large-Scale Computational Astrophysics.
+\emph{Proceedings of the Workshop on Management of Uncertain Data}, (2009),
+  pages 63--77.
+
+\item Howe, Bill, Huy Vo, Claudio Silva, and Juliana
+Freire. 2009. Query-driven visualization in the cloud with mapReduce.
+\emph{Fourth workshop on Ultrascale Visualization} (2009). 
+
+\item Howe, Bill, David Maier, Nicolas Rayner, and James
+Rucker. 2008. Quarrying dataspaces: Schemaless profiling of unfamiliar
+information sources. \emph{Data engineering workshop, 2008. iCDEW 2008.
+iEEE 24th international conference on} (2008), 270--277. 
+
+\item Howe, Bill, and Roger Barga.
+2008. The eScience Appliance: Provisioning an Inexpensive Bottom-Up
+Cyberinfrastructure. \emph{2nd microsoft eScience workshop, in
+conjunction with eScience 2008} (2008). 
+
+\item Bright, Laura, David Maier, and Bill Howe. 2006. Managing the
+forecast factory. \emph{Proceedings of the ICDE Workshop on Workflow and
+Data Flow for Scientific Applications (SciFlow)} (2006). 
+
+\item Howe, Bill, Kuldeep Tanna, Paul Turner, and David Maier. 2004.
+Emergent semantics: Towards self-organizing scienitifc metadata.
+\emph{Proceedings of Semantics for a Networked World: Semantics for Grid
+Databases} (Paris, France, June 2004). 
+
+\item Howe, Bill and David Maier. 2002. Modeling data product generation,
+Workshop on Data Derivation and Provenance (Chicago, IL, 2002).
+\end{bulletlist}
+
+{\bf Chaired Panels, Workshops, Reports}
+\begin{bulletlist}
+\item Chair, {\em Should we all be teaching intro to data science instead of intro to databases?}, Panel, Proceedings of the 2014 ACM SIGMOD international conference on Management of data.
+\item Co-Organizer, {\em Designing good algorithms for MapReduce and beyond}, Proceedings of the Third ACM Symposium on Cloud Computing. 2014.
+\item Co-Organizer, {\em Education and career paths for data scientists}, Panel, Magdalena Balazinska, Susan B Davidson, Bill Howe, Alexandros Labrinidis, Proceedings of the 25th International Conference on Scientific and Statistical Database Management. 2013.
+\end{bulletlist}
+
+{\bf Peer-Reviewed Abstracts, Talks, Posters}
+\begin{bulletlist}
+
+\item Ren, Kai, Garth Gibson, YongChul Kwon, Magda Balazinska and Bill Howe. 2012.
+Hadoop's Adolescence; A Comparative Workloads Analysis from Three Research Clusters,,
+\emph{High Performance Computing, Networking, Storage and Analysis (SCC)}, 
+pages 1453--1453, 2012
+
+\item AlSayyad, Yusra, Simon Krughoff, Andrew J. Connolly,  L. Jones, Tomas Budavari, and Bill Howe. 2011. Efficient Prediction of Asteroid Positions from Solar System Models, 
+\emph{Bulletin of the American Astronomical Society}, 43 (2011).
+
+\item Fishback, Harrison-Green, and Bill Howe. 2008. Scientific mashups:
+Runtime-configurable data product ensembles. \emph{4th iEEE
+international conference on e-science (eScience) (poster)} (2008).
+
+\item Bill Howe and Nicholas
+Hagerty and Ethan Van Matre and David Maier and Antonio Baptista and
+Charles Seaton, Paul Turner. 2007. The Ocean Appliance: Complete
+Platform Provisioning for Low-Cost Data Sharing. \emph{Proceedings of
+the OCEANS 2007 mTS/IEEE conference} OCEANS (2007). 
+
+\end{bulletlist}
+

@@ -13,7 +13,7 @@ image:
 
 RACO (the Relational Algebra COmpiler) is a polystore middleware system that provides query translation, optimization, and orchestration across complex multi-system big data ecosystems.  RACO provides language and optimization services for the [Myria big data management stack](http://myria.cs.washington.edu/) and serves as a core component of that project.  In addition to Myria, RACO includes support for Spark, SciDB, Grappa, C, and SQL backends. 
 
-<img class="" width="380px" height="300px" src="{{ site.baseurl }}/images/raco_arch.png" style="float:right; padding:20px; "/>
+<img class="teaser" src="{{ site.baseurl }}/images/raco_arch.png"/>
 
 Why does RACO exist?
 
@@ -50,9 +50,4 @@ We are designing RACO to fullfill these requirements.  More generally, we are in
 
 ### Papers
 
-Kamook tech report
-
-Myria demo
-
-BigDawg demo
-
+{% bibliography --query @*[author~=Myers || author~=Jain || author~=Mattson || title~=Myria] %}

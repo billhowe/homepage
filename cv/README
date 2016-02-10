@@ -1,0 +1,6 @@
+
+Recreate publication list:
+
+cat howe.bib | ruby bibtex2markdown.rb > citations.tex
+
+pandoc citations.tex --bibliography=howe.bib  --csl=latexcv.csl  -o publications.tex
