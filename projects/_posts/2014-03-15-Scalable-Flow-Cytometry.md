@@ -28,7 +28,6 @@ In earlier work, we developed systems for managing ad hoc sensor data, recommend
 
 
 ## Papers
-hyrkas2016clustering
 {% bibliography --query @*[key=hyrkas2016clustering] %}
 {% bibliography --query @*[key=hyrkas2015time] %}
 {% bibliography --query @*[key=maas2015gaussian] %}
