@@ -4,16 +4,24 @@
 %\usepackage{times}
 %\usepackage{mathptm}
 %\usepackage{revnum}
+\usepackage{hyperref}
 \newcommand{\comment}[1]{}
 \newcommand{\myname}{Bill Howe}
 \newcommand{\phone}{{\tt (404) 514-3003}}
 \newcommand{\email}{{\tt billhowe@cs.washington.edu}}
 \newcommand{\www}{{\tt \url{http://homes.cs.washington.edu/~billhowe}}}
+\newcommand{\twitter}{{\tt @billghowe}}
 \newcommand{\address}{5222 36th Ave \\
 Seattle, WA  98105}
 \newcommand{\ptitle}{\em}
-\usepackage{hyperref}
 %\usepackage[hyperindex,pdfmark]{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
 
 \hoffset=-.15\textwidth%
 \textwidth=1.30\textwidth%
@@ -25,18 +33,25 @@ Seattle, WA  98105}
 \pagestyle{fancy}
 \cfoot{\thepage}  % no footers (in pagestyle fancy)
 % running left heading
-\lhead{\bfseries\LARGE\em \noindent{}\hspace{-.2em}\myname{}
-        \hfill Curriculum Vitae -- February 2016\vspace{-.2ex}\\}
+\lhead{{\bfseries\LARGE\em \noindent{}\hspace{-.2em}\myname{}}
+        {\bfseries\hfill Curriculum Vitae -- February 2016}\vspace{2.0em}\\}
 % running right heading
-\newcommand{\spc}{1.0em}
+\newcommand{\spc}{0.7em}
 \rhead{\small
 \phone
 \hspace{\spc}$\cdot$\hspace{\spc}
 \email
 \hspace{\spc}$\cdot$\hspace{\spc}
-\www}
+\www\\
+{\tt github: \href{https://github.com/billhowe}{billhowe}}
+\hspace{\spc}$\cdot$\hspace{\spc}
+{\tt linkedin: \href{https://www.linkedin.com/in/billghowe}{billghowe}}
+\hspace{\spc}$\cdot$\hspace{\spc}
+{\tt slideshare: \href{http://www.slideshare.net/billhoweuw}{billhoweuw}}
+\hspace{\spc}$\cdot$\hspace{\spc}
+\twitter}
 % adjust, because the header is now taller than usual.
-\setlength{\headheight}{7ex}
+\setlength{\headheight}{10ex}
 
 % bulleted list environment
 \newenvironment{bulletlist}
@@ -325,18 +340,16 @@ See also \url{https://scholar.google.com/citations?user=dQ-x9NQAAAAJ}
 
 \begin{bulletlist}
 \item {\bf Brandon Myers}, CSE (with Mark Oskin), Ph.D. expected June 2016 (query compilation, high-peformance computing)
-\item {\bf Poshen Lee}, EE, Ph.D. expected August 2016 (machine vision
+\item {\bf Poshen Lee}, EE, Ph.D. expected August 2016 (machine vision, bibliometrics, information extraction)
 \item {\bf Shrainik Jain}, CSE, Ph.D. expected June 2018 (polystores, high-variety databases)
-\item {\bf Dylan Hutchison}, CSE, Ph.D. expected June 2020.
-\item {\bf Dominik Moritz} (co-advised with Jeff Heer), Ph.D. expected June 2019.
-\item {\bf YongChul Kwon} (co-advised with Magda Balazinska), Ph.D. received June 2011.
-    Skew-Resistant Parallel Computation.  now with Microsoft.
+\item {\bf Dylan Hutchison}, CSE, Ph.D. expected June 2020 (polystores, query optimization)
+\item {\bf Dominik Moritz} CSE (with Jeff Heer), Ph.D. expected June 2019. (scalable visualization)
 \item {\bf Jeremy Hyrkas}, CSE (Big data applications, analytics for science) now at Microsoft
-\item {\bf Yongchul Kwon} CSE — Big data systems, fault-tolerance, skew handling. Now at Microsoft
-\item {\bf Yingyi Bu} CSE — Big data systems and languages. Moved to UC Irvine
-\item {\bf Tanmay Modak} iSchool Masters — Visual analytics, machine learning
-\item {\bf Elton Dias} iSchool Masters — Visual analytics, machine learning
-\item {\bf Abhigyan Kaustubh} iSchool Masters — Visual analytics, machine learning
+\item {\bf Yongchul Kwon} CSE (with Magda Balazinska) (Big data systems, fault-tolerance, skew handling) Now at Microsoft
+\item {\bf Yingyi Bu} CSE (Big data systems and languages) Moved to UC Irvine
+\item {\bf Tanmay Modak} iSchool Masters (Visual analytics, machine learning)
+\item {\bf Elton Dias} iSchool Masters (Visual analytics, machine learning)
+\item {\bf Abhigyan Kaustubh} iSchool Masters (Visual analytics, machine learning)
 \end{bulletlist}
 
 \item [Postdocs]
