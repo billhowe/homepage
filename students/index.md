@@ -1,7 +1,7 @@
 ---
 layout: default
 section: students
-title: "Students, Postdocs, and Research Scientists"
+title: "Students, Postdocs, and Staff"
 ---
 
 ### {{ page.title }}
@@ -39,3 +39,21 @@ title: "Students, Postdocs, and Research Scientists"
 * Xiaolei Ma (Civil Engineering) --- Transportation analytics
 * Nodira Khoussainova (CS) --- Query recommendation, performance debugging
 * Paris Koutris (CS) --- Data pricing, modeling big data computation
+
+#### eScience Research Staff
+
+* Jacob Vanderplas (Astronomy, Computer Science) --- astronomy, machine learning, statistics, algorithms, python
+* Joe Hellerstein (Computer Science) --- software engineering, computational biology
+* Ariel Rokem (Neuroscience) --- neuroscience, machine learning, image analytics, python
+* Valentina Staneva (Applied Math) --- applied math, modeling, machine learning, image analytics
+* Bernease Herman (Statistics) --- statistics, cloud computing
+* Britta Fiore-Gartland (Human-Centered Design and Engineering) --- collaborative technology, ethnography
+* Rob Fatland (Physics, Computer Science) --- earth science data, cloud computing, data management
+* Anthony Arendt (Glaciology) --- geographic data systems, spatiotemporal data, satellite data
+* Bryna Hazelton (Astrophysics) --- petascale computing, machine learning
+* Andrew Fiore-Gartland (Biostatistics) --- machine learning, statistics
+
+#### eScience Program Management
+
+* Micaela Parker (Oceanography)
+* Sarah Stone (Oceanography)
