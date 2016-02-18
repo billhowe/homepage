@@ -40,7 +40,9 @@ title: "Students, Postdocs, and Staff"
 * Nodira Khoussainova (CS) --- Query recommendation, performance debugging
 * Paris Koutris (CS) --- Data pricing, modeling big data computation
 
-#### eScience Research Staff
+### eScience Staff
+
+#### Research Staff
 
 * Jacob Vanderplas (Astronomy, Computer Science) --- astronomy, machine learning, statistics, algorithms, python
 * Joe Hellerstein (Computer Science) --- software engineering, computational biology
