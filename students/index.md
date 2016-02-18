@@ -1,7 +1,7 @@
 ---
 layout: default
 section: students
-title: "Students, Postdocs, and Staff"
+title: "Students, Postdocs, and Research Scientists"
 ---
 
 ### {{ page.title }}
@@ -42,7 +42,7 @@ title: "Students, Postdocs, and Staff"
 
 ### eScience Staff
 
-#### Research Staff
+#### Data Scientists and Research Scientists
 
 * Jacob Vanderplas (Astronomy, Computer Science) --- astronomy, machine learning, statistics, algorithms, python
 * Joe Hellerstein (Computer Science) --- software engineering, computational biology
@@ -55,7 +55,7 @@ title: "Students, Postdocs, and Staff"
 * Bryna Hazelton (Astrophysics) --- petascale computing, machine learning
 * Andrew Fiore-Gartland (Biostatistics) --- machine learning, statistics
 
-#### eScience Program Management
+#### Program Management
 
 * Micaela Parker (Oceanography)
 * Sarah Stone (Oceanography)
