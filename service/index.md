@@ -61,8 +61,8 @@ UW eScience Institute.
 
 #### Service
 
-* Program Committee, SIGMOD, 2017
-* Program Chair, eScience, 2016
+* Program Committee, SIGMOD 2017
+* Program Chair, eScience 2016
 * Program Committee, HotCloud 2014
 * Program Committee, eScience 2014
 * Program Committee, SSDBM 2013
