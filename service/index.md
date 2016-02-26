@@ -20,19 +20,14 @@ title: "Teaching and Service"
 * CSE344 Introduction to Data Management, Fall 2010
 * Scientific Data Management, Spring 2006 (at Portland State University)
 
-### Panels, Reports, Outreach, Organization
-* Co-PI, NSF Western Big Data Hub
-* Director, Seattle MetroLab
-* Co-founder, Urban@UW
+### Panels, Reports, Outreach, Organizations
+* Co-PI, [NSF Western Big Data Hub](http://westbigdatahub.org/)
+* Director, [Seattle MetroLab](http://metrolab.uw.edu/)
+* Co-founder, [Urban@UW](http://urban.uw.edu)
 * Mentor, NextSeattle Ideathon, August 2015
-* Chair, Should we all be teaching intro to data science instead of intro to
-databases?, Panel, Proceedings of the 2014 ACM SIGMOD international conference
-on Management of data.
-* Co-Organizer, Designing good algorithms for MapReduce and beyond, Proceedings
-of the Third ACM Symposium on Cloud Computing. 2014.
-* Co-Organizer, Education and career paths for data scientists, Panel, Magdalena
-Balazinska, Susan B Davidson, Bill Howe, Alexandros Labrinidis, Proceedings
-of the 25th International Conference on Scientific and Statistical
+* Chair, Should we all be teaching intro to data science instead of intro to databases?, Panel, Proceedings of the 2014 ACM SIGMOD international conference on Management of data.
+* Co-Organizer, Designing good algorithms for MapReduce and beyond, Proceedings of the Third ACM Symposium on Cloud Computing. 2014.
+* Co-Organizer, Education and career paths for data scientists, Panel, Magdalena Balazinska, Susan B Davidson, Bill Howe, Alexandros Labrinidis, Proceedings of the 25th International Conference on Scientific and Statistical
 Database Management. 2013.
 * Chair, High-Performance Computing Meets Databases, 2011
 * Chair, High-Performance Computing Meets Databases, 2010
