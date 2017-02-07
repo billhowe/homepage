@@ -1,0 +1,40 @@
+---
+layout: project
+section: projects
+date: 2014-03-22 14:00:00
+title: "SQLShare: DB-as-a-Service"
+excerpt: "SQLShare aims to increase uptake of databases in data science and shed light on how data scientists work with data" 
+image:
+  feature:
+  teaser: sqlshare.png
+  thumb:
+---
+
+<img class="teaser" src="{{ site.baseurl }}/images/sqlshare.png"/>
+
+[SQLShare](https://uwescience.github.io/sqlshare) is a database service aimed at removing the obstacles to using relational databases: installation, configuration, schema design, tuning, data ingest, and even application design. You simply upload your data and immediately start querying it. One of the main lessons from SQLShare is that a relatively minor set of changes to how existing database technology is packaged and delivered is sufficient to convince science and data science users to adopt SQL in their day-to-day data manipulation and analysis tasks, potentially displacing script-and-file based approaches.
+
+We analyzed the handwritten SQL queries and found that the features of SQLShare were instrumental in attracting new kinds of ad hoc queries and that the SQLShare workload is demonstrably more diverse than a comparable public workload in science, and that users are writing very complex queries by hand. The query log can be downloaded from [SQLShare data release page](https://uwescience.github.io/sqlshare/data_release.html).
+
+### People
+
+Current
+
+* Shrainik Jain
+
+Past
+
+* Daniel Halperin
+* Sagar Chitnis
+* Garret Cole
+
+### Papers
+
+{% bibliography --query @*[key=jain2016sqlshare] %}
+{% bibliography --query @*[author~=Abdu] %}
+{% bibliography --query @*[key=halperin2013ocean] %}
+{% bibliography --query @*[key=howe2013sqlshare] %}
+{% bibliography --query @*[key=howe2013collaborative] %}
+{% bibliography --query @*[key=howe2011example] %}
+{% bibliography --query @*[key=howe2011database] %}
+{% bibliography --query @*[key=howe2010sql] %}
