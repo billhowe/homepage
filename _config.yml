@@ -1,7 +1,7 @@
 baseurl: /~billhowe/
 exclude: [README.md, deploy.sh]
 highlighter: pygments
-gems: ['jekyll/scholar']
+plugins: ['jekyll/scholar']
 
 scholar:
   style: ieee

@@ -30,13 +30,13 @@ We are designing RACO to fullfill these requirements.  More generally, we are in
 
 ### Current Team
 
-* Brandon Myers
 * Dylan Hutchison
 * Dominik Moritz
-* Seung-Hee Bae
 * Shrainik Jain
 
 ### Alumni
+* Brandon Myers (now at University of Iowa)
+* Seung-Hee Bae (now at University of Western Michigan)
 * Jeremy Hyrkas (now at Microsoft)
 * Marianne Shaw (now at Tableau)
 * Dan Halperin (now at Google)
