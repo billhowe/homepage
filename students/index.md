@@ -10,16 +10,19 @@ title: "Students, Postdocs, and Research Scientists"
 #### Current
 
 * Shrainik Jain (CS) --- Polystore architecture, high-variety databases
-* Poshen Lee (EE) --- Computer vision, machine learning, bibliometrics, [viziometrics](http://viziometrics.org)
 * Dominik Moritz (CS) --- Integrating scalable databases and visualization, visualization recommendation
-* Seung-Hee Bae (CS Postdoc) --- Graph clustering algorithms, HPC + big data
-* Brandon Myers (CS) --- Query compilation, high-peformance computing, big data systems
-* Dylan Hutchison (CS) --- Models and languages for polystores
-* Sophie Clayton (eScience Postdoc) --- Large-scale analytics over environmental flow cytometry
+* Dylan Hutchison (CS) --- Models and languages for polystores, optimization of linear and relational algebra
+* Sean Yang (EE) --- computer vision, [viziometrics](http://viziometrics.org)
+* Luke Rodriguez (iSchool) --- differential privacy, data science for social good
+* Emily Furst (CS) --- GPU databases
 
 #### Past
 
+* Brandon Myers (CS) --- Query compilation, high-peformance computing, big data systems.  Now at University of Iowa
+* Sophie Clayton (eScience Postdoc) --- Large-scale analytics over environmental flow cytometry
+* Poshen Lee (EE) --- Computer vision, machine learning, bibliometrics, [viziometrics](http://viziometrics.org)
 * Jeremy Hyrkas (CS) --- Big data applications, analytics for science. Now at Microsoft
+* Seung-Hee Bae (CS Postdoc) --- Graph clustering algorithms, HPC + big data
 * Dan Halperin (CS Senior Research Scientist) --- Big data systems and languages, scientific data management. Now at Google
 * Andrew Whitaker (CS Research Scientist) --- Big data systems and languages, query optimization. Now at Amazon
 * Marianne Shaw (CS Postdoc) --- Graph query, big data traversal algorithms. Now at Tableau
@@ -40,7 +43,7 @@ title: "Students, Postdocs, and Research Scientists"
 * Nodira Khoussainova (CS) --- Query recommendation, performance debugging
 * Paris Koutris (CS) --- Data pricing, modeling big data computation
 
-### eScience Staff
+### eScience Staff (formerly, as Associate Director)
 
 #### Data Scientists and Research Scientists
 
