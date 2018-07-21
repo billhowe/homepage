@@ -76,6 +76,10 @@ ol.bibliography > li {
   text-decoration:none;
 }
 
+.highlight {
+    color: #ff0000;
+}
+
 img.teaser {
   float:right;
   width:45%;
