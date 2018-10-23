@@ -10,8 +10,6 @@ image:
   thumb:
 ---
 
-<a href="http://escience.washington.edu/get-involved/incubator-programs/data-science-for-social-good/"><img width="80%" src="http://escience.washington.edu/wp-content/uploads/2016/02/DataScienceForSocialGood.png"/></a>
-
 
 The National Science Foundation has awarded a $1.6 million BIGDATA grant to Drexel University, in collaboration with the University of Washington, University of Michigan and University of Massachusetts Amherst to research and develop responsible data science methods targeting the early stages of the data life cycle.
 
