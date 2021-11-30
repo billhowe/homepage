@@ -6,11 +6,11 @@ title: "Taxi Demanding Inpainting Using Partial Convolution"
 excerpt: "We use image inpainting technique -- partial convolution network, to inpaint raster taxi demand data in NYC."
 image:
   feature:
-  teaser: claimverification.png
+  teaser: taxi-inpainting.png
   thumb:
 ---
 
-<img class="teaser" src="{{ site.baseurl }}/images/claimverification.png">
+<img class="teaser" src="{{ site.baseurl }}/images/taxi-inpainting.png">
 
 Urban data usually contains missing values, such that part of the region has values for the variables of interest, while other regions do not. The missing values could potentially hinder the usability of urban data in urban computing. Traditionally, there are statistical approaches to impute missing values, such as global/local mean imputing, interpolations, spatial regression models etc. But in recent years, it has been spotted that deep learning methods are powerful to model non-linear interactions of features and generate promising results in many domains, including image inpainting techniques in computer vision. Image inpainting techniques are capable of recovering missing piexels such that the reconstructed images are realistic.
 
